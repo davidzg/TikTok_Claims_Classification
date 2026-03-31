@@ -9,7 +9,7 @@ The goal of this project is to develop a machine learning model that assists Tik
 ### 1. Exploratory Data Analysis (EDA) & Data Cleaning
 Notebook: [01_Exploratory_Data_Analysis.ipynb](01_Exploratory_Data_Analysis.ipynb)
 
-In this phase, I conducted a deep dive into a dataset of ~19,000 videos to understand the relationship between engagement metrics and claim status.
+In this phase, I conducted a deep dive into a dataset of ~19,000 videos to understand the relationship between engagement metrics and claim status. For a full breakdown of the variables used in this project, see the [Data dictionary](data_dictionary.md).
 
 **Key Findings:**
 
@@ -17,10 +17,9 @@ In this phase, I conducted a deep dive into a dataset of ~19,000 videos to under
 
 - Engagement is a Key Predictor: Claim videos generate significantly higher views, likes, shares, and downloads compared to opinion videos.
 
-![View count by claim status](images/view_count_by_claim_status.png)
-
 - Videos by "Banned" authors show higher engagement per view when flagged as claims.
 
+![View count by claim status](images/view_count_by_claim_status.png)
 ![View count by ban status](images/view_count_by_ban_status.png)
 
 ### 2. Feature Engineering & Machine Learning
@@ -52,6 +51,7 @@ Feature Importance: Engagement metrics (views, likes, shares) remained the stron
 - Frameworks: Scikit-Learn, XGBoost
 - Feature Engineering: CountVectorizer (NLP), Text Length Extraction.
 - Validation: 60/20/20 Train/Validation/Test split to ensure the model generalizes to new, unseen data.
+- To run this notebook locally, please refer to the [requirements.txt](requirements.txt) for environment dependencies.
 
 ## Key Insights for Stakeholders
 - Engagement Patterns: High engagement is the primary "red flag" for potential claims on the platform.
@@ -64,8 +64,3 @@ Feature Importance: Engagement metrics (views, likes, shares) remained the stron
 - Engagement Triggers: Implement "High-Engagement Alerts." Since views and shares are strong predictors of claims, any video showing a rapid spike in these metrics should be auto-flagged for review.
 
 - Refining Text Analysis: While engagement is currently the strongest signal, future iterations should explore sentiment analysis to see if the tone of the claim adds more predictive value.
-
-
-
-
-
