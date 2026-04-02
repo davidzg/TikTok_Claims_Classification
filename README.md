@@ -17,9 +17,10 @@ In this phase, I conducted a deep dive into a dataset of ~19,000 videos to under
 
 - Engagement is a Key Predictor: Claim videos generate significantly higher views, likes, shares, and downloads compared to opinion videos.
 
+![View count by claim status](images/view_count_by_claim_status.png)
+
 - Videos by "Banned" authors show higher engagement per view when flagged as claims.
 
-![View count by claim status](images/view_count_by_claim_status.png)
 ![View count by ban status](images/view_count_by_ban_status.png)
 
 ### 2. Feature Engineering & Machine Learning
