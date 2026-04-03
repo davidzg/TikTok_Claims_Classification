@@ -15,6 +15,10 @@ The best way to tell if a video is a "claim" is not by analyzing the text, but b
 * We found that user behavior is a stronger predictor than text, as video view, like, and share counts were the most important indicators.
 * In this project, a "False Negative" is a dangerous failure, so I tuned the Random Forest Champion Model for high recall to keep the platform safe.
 
+<p align="center">
+  <img src="../images/cm_rf_test.png" alt="alt text">
+</p>
+
 ## Strategic Recommendations
 To turn these findings into a working safety tool, I recommend the following:
 * Use the Random Forest model to automatically move "opinion" videos to a lower priority, which will double the moderation team's capacity.
